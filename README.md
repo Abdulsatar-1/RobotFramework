@@ -1,2 +1,2 @@
 # RobotFramework
-In this repository iam collecting all all robotFramework project scrips
+In this repository iam collecting all robotFramework project scrips
