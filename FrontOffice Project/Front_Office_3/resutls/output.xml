@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-03-03T14:14:29.638655" rpa="false" schemaversion="5">
+<suite id="s1" name="Front Office" source="C:\Programming\Python\RobotFramework\FrontOffice_Project\Front_Office_3\tests\Front_Office.robot">
+<test id="s1-t1" name="Should be able to access &quot;Team&quot; page" line="17">
+<kw name="Begin Web Test" owner="CommonWeb" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-03T14:14:31.000671" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-03T14:14:31.000305" elapsed="2.637677"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:30.999179" elapsed="2.639058"/>
+</kw>
+<kw name="Go to Landing Page" owner="FrontOfficeApp">
+<kw name="Navigate To" owner="Landing">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-03T14:14:33.647796" level="INFO">Opening url 'https://automationplayground.com/front-office'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-03T14:14:33.647573" elapsed="2.116078"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:33.647240" elapsed="2.116583"/>
+</kw>
+<kw name="Verify Page Loaded" owner="Landing">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${LANDING_NAVIGATION_ELEMENT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-03-03T14:14:35.764450" elapsed="0.033112"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:35.764076" elapsed="0.033648"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:33.646788" elapsed="2.151019"/>
+</kw>
+<kw name="Go to &quot;Team&quot; Page" owner="FrontOfficeApp">
+<kw name="Select &quot;Team&quot; Page" owner="TopNav">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-03T14:14:35.799139" level="INFO">Clicking element 'css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(5) &gt; a'.</msg>
+<arg>${TOP_NAV_TEAM_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-03T14:14:35.798892" elapsed="0.104445"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-03T14:14:38.905405" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-03T14:14:35.903639" elapsed="3.001949"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:35.798605" elapsed="3.107172"/>
+</kw>
+<kw name="Verify Page Loaded" owner="Team">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${TEAM_HEADER_LABEL}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-03-03T14:14:38.906446" elapsed="0.011568"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:38.906054" elapsed="0.012108"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:35.798204" elapsed="3.120047"/>
+</kw>
+<kw name="End Web Test" owner="CommonWeb" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-03-03T14:14:38.919073" elapsed="2.621651"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:38.918716" elapsed="2.622198"/>
+</kw>
+<doc>This is Test nro. 1</doc>
+<tag>Test_01</tag>
+<status status="PASS" start="2025-03-03T14:14:30.997922" elapsed="10.543213"/>
+</test>
+<test id="s1-t2" name="&quot;Team&quot; page should match requirements" line="23">
+<kw name="Begin Web Test" owner="CommonWeb" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-03T14:14:41.542527" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-03T14:14:41.542335" elapsed="2.332836"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:41.542057" elapsed="2.333299"/>
+</kw>
+<kw name="Go to Landing Page" owner="FrontOfficeApp">
+<kw name="Navigate To" owner="Landing">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-03-03T14:14:43.882271" level="INFO">Opening url 'https://automationplayground.com/front-office'</msg>
+<arg>${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-03-03T14:14:43.882085" elapsed="1.753781"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:43.881816" elapsed="1.754216"/>
+</kw>
+<kw name="Verify Page Loaded" owner="Landing">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${LANDING_NAVIGATION_ELEMENT}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-03-03T14:14:45.636650" elapsed="0.017725"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:45.636295" elapsed="0.018245"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:43.881458" elapsed="1.773164"/>
+</kw>
+<kw name="Go to &quot;Team&quot; Page" owner="FrontOfficeApp">
+<kw name="Select &quot;Team&quot; Page" owner="TopNav">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-03-03T14:14:45.656968" level="INFO">Clicking element 'css=#bs-example-navbar-collapse-1 &gt; ul &gt; li:nth-child(5) &gt; a'.</msg>
+<arg>${TOP_NAV_TEAM_LINK}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-03T14:14:45.656595" elapsed="0.135319"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-03T14:14:48.792888" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-03T14:14:45.792206" elapsed="3.000867"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:45.656316" elapsed="3.136926"/>
+</kw>
+<kw name="Verify Page Loaded" owner="Team">
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>${TEAM_HEADER_LABEL}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-03-03T14:14:48.794003" elapsed="0.014926"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:48.793556" elapsed="0.015546"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:45.655929" elapsed="3.153278"/>
+</kw>
+<kw name="Validate &quot;Team&quot; Page" owner="FrontOfficeApp">
+<kw name="Validate Page Contents" owner="Team">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-03-03T14:14:48.844595" level="INFO">${ElementText} = OUR AMAZING TEAM</msg>
+<var>${ElementText}</var>
+<arg>${TEAM_HEADER_LABEL}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-03T14:14:48.810772" elapsed="0.033892"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${ElementText}</arg>
+<arg>Our Amazing Team</arg>
+<arg>ignore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-03-03T14:14:48.844908" elapsed="0.000377"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:48.810422" elapsed="0.035002"/>
+</kw>
+<kw name="Validate TeamPage Description" owner="Team">
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2025-03-03T14:14:48.869484" level="INFO">${ElementText_2} = Lorem ipsum dolor sit amet consectetur.</msg>
+<var>${ElementText_2}</var>
+<arg>${TEAM_DESCRIPTION_LABEL}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-03-03T14:14:48.846034" elapsed="0.023530"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${ElementText_2}</arg>
+<arg>Lorem ipsum dolor sit amet consectetur.</arg>
+<arg>ignore_case=true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2025-03-03T14:14:48.869844" elapsed="0.000423"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:48.845691" elapsed="0.024919"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:48.809991" elapsed="0.060727"/>
+</kw>
+<kw name="End Web Test" owner="CommonWeb" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-03-03T14:14:48.871756" elapsed="3.626102"/>
+</kw>
+<status status="PASS" start="2025-03-03T14:14:48.871337" elapsed="3.626718"/>
+</kw>
+<doc>This is Test nro. 2</doc>
+<tag>Test_02</tag>
+<status status="PASS" start="2025-03-03T14:14:41.541603" elapsed="10.956706"/>
+</test>
+<doc>Talk about what this suite of tests does</doc>
+<status status="PASS" start="2025-03-03T14:14:29.641063" elapsed="22.858234"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Test_01</stat>
+<stat pass="1" fail="0" skip="0">Test_02</stat>
+</tag>
+<suite>
+<stat name="Front Office" id="s1" pass="2" fail="0" skip="0">Front Office</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

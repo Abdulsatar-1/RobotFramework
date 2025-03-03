@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2 (Python 3.13.1 on win32)" generated="2025-03-03T11:49:26.816260" rpa="false" schemaversion="5">
+<suite id="s1" name="Front Office" source="C:\Programming\Python\RobotFramework\FrontOffice_Project\Front_Office_2\tests\Front_Office.robot">
+<test id="s1-t1" name="Should be able to access &quot;Team&quot; page" line="15">
+<kw name="Begin Web Test" owner="CommonWeb" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-03T11:49:28.100554" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-03T11:49:28.100241" elapsed="2.366991"/>
+</kw>
+<status status="PASS" start="2025-03-03T11:49:28.099274" elapsed="2.368270"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T11:49:30.480887" level="INFO">Executing test 1</msg>
+<arg>Executing test 1</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T11:49:30.480371" elapsed="0.000619"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-03T11:49:32.490625" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-03T11:49:30.486929" elapsed="2.003919"/>
+</kw>
+<kw name="End Web Test" owner="CommonWeb" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-03-03T11:49:32.492066" elapsed="2.357199"/>
+</kw>
+<status status="PASS" start="2025-03-03T11:49:32.491701" elapsed="2.357719"/>
+</kw>
+<doc>This is test 1</doc>
+<tag>test1</tag>
+<status status="PASS" start="2025-03-03T11:49:28.098265" elapsed="6.751336"/>
+</test>
+<test id="s1-t2" name="&quot;Team&quot; page should match requirements" line="21">
+<kw name="Begin Web Test" owner="CommonWeb" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-03-03T11:49:34.851418" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-03-03T11:49:34.851215" elapsed="2.395432"/>
+</kw>
+<status status="PASS" start="2025-03-03T11:49:34.850949" elapsed="2.395970"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-03-03T11:49:37.249466" level="INFO">Executing test 2</msg>
+<arg>Executing test 2</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-03-03T11:49:37.249243" elapsed="0.000316"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-03-03T11:49:39.254504" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-03-03T11:49:37.249838" elapsed="2.004853"/>
+</kw>
+<kw name="End Web Test" owner="CommonWeb" type="TEARDOWN">
+<kw name="Close All Browsers" owner="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" start="2025-03-03T11:49:39.255746" elapsed="2.484426"/>
+</kw>
+<status status="PASS" start="2025-03-03T11:49:39.255291" elapsed="2.485044"/>
+</kw>
+<doc>This is test 2</doc>
+<tag>test2</tag>
+<status status="PASS" start="2025-03-03T11:49:34.850327" elapsed="6.890212"/>
+</test>
+<doc>Talk about what this suite of tests does</doc>
+<status status="PASS" start="2025-03-03T11:49:26.818613" elapsed="14.923073"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">test1</stat>
+<stat pass="1" fail="0" skip="0">test2</stat>
+</tag>
+<suite>
+<stat name="Front Office" id="s1" pass="2" fail="0" skip="0">Front Office</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
